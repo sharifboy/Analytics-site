@@ -1,0 +1,24 @@
+@mixin title {
+  font-size: 30px;
+  line-height: 35px;
+  color: $titleColor;
+}
+
+@mixin text {
+  font-size: 18px;
+  line-height: 150%;
+  color: $textColor;
+}
+
+@mixin links {
+  font-size: 16px;
+  line-height: 19px;
+  color: $textColor;
+  font-family: $InterRegular;
+}
+
+@mixin dflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
