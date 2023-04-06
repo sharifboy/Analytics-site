@@ -37,4 +37,9 @@
     background-color: $titleColor;
    
   }
+
+  &__btn:hover {
+    background-color: #fff;
+    transition: $transition;
+  }
 }
