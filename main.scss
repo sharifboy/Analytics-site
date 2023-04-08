@@ -3,10 +3,9 @@
 @import "./style/variables/fonts";
 @import "./style/variables/variables";
 @import "./style/variables/mixin";
-@import "./style/variables/media-mixins";
-
+@import "./style/variables/media";
 // Components
 
-@import "./style/components/header-banner";
-@import "./style/components/header-content";
-@import "./style/components/header-nav";
+@import "./style/components/header";
+@import "./style/components/nav";
+@import "./style/components/mobile-menu";

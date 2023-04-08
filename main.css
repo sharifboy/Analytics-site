@@ -15,90 +15,83 @@
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: url(../Web-site/font/Roboto-Bold.ttf);
+  src: url(../../font/Roboto-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Roboto-Regular";
-  src: url(../Web-site/font/Roboto-Regular.ttf);
+  src: url(../../font/Roboto-Regular.ttf);
   font-weight: 400;
 }
-.header-banner {
-  width: 100%;
-  background-size: cover;
+.header {
+  background-image: url(/image/background-img.png);
   background-repeat: no-repeat;
-  background-image: url(./image/background-img.png);
+  background-size: cover;
 }
 
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-content__title {
-  max-width: 540px;
-  width: 100%;
-  height: 120px;
-  font-size: 50px;
-  color: #fff;
-}
-.header-content__text {
-  font-size: 18px;
-  line-height: 150%;
-  color: #8794BA;
-  max-width: 540px;
-  width: 100%;
-  margin-block: 15px 50px;
-}
-.header-content__btn {
-  background: #ef2a82;
-  border-radius: 68px;
-  padding: 15px 80px;
-  border: none;
-}
-
-.header-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-block: 50px;
 }
-.header-nav__links {
+.nav-link {
   display: flex;
   align-items: center;
   -moz-column-gap: 36px;
        column-gap: 36px;
 }
-.header-nav__link {
+.nav-link__links {
   font-size: 16px;
   line-height: 19px;
   color: #8794BA;
   font-family: "Inter-Regular";
+  cursor: pointer;
 }
-.header-nav__content {
+.nav-btn {
   display: flex;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }
-.header-nav__block {
+.nav-btn__text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #8794BA;
+  font-family: "Inter-Regular";
   display: flex;
   align-items: center;
-  gap: 40px;
+  cursor: pointer;
 }
-.header-nav__text {
-  font-size: 16px;
-  line-height: 19px;
-  color: #8794BA;
-  font-family: "Inter-Regular";
-}
-.header-nav__btn {
+.nav-btn__btn {
   padding: 10px 53px;
-  border: 1px solid #465b95;
   border-radius: 68px;
+  border: 1px solid #465b95;
+  background: #172755;
   color: #8794BA;
-  background-color: #172755;
+  cursor: pointer;
 }
-.header-nav__btn:hover {
+@media only screen and (max-width: 840px) {
+  .nav-btn__btn {
+    display: none;
+  }
+}
+.nav-btn__btn:hover {
   background-color: #fff;
-  transition: 0.5s;
+  transition: all 0.5s ease;
+}
+.nav .burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+@media only screen and (max-width: 840px) {
+  .nav .burger-menu {
+    display: flex;
+  }
+}
+.nav .burger-menu > div {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
 }/*# sourceMappingURL=main.css.map */
