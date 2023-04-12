@@ -1,5 +1,49 @@
 .header {
-    background-image: url(/image/background-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(/image/background-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 74px;
+
+  &-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__links {
+      @include dflex;
+      column-gap: 36px;
+    }
+
+    &__link {
+      @include links;
+    }
+  }
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+
+    &__text {
+      @include links;
+    }
+
+    &__btn {
+      @include links;
+      border: 1px solid #465b95;
+      border-radius: 68px;
+      padding: 10px 53px;
+      cursor: pointer;
+      transition: $transition;
+    }
+
+    &__btn:hover {
+        background-color: #fff;
+    }
+  }
 }
