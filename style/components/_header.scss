@@ -2,9 +2,13 @@
   background-image: url(/image/background-img.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 74px;
 
-  &-banner {
+  // .banner {
+  //   display: flex;
+  //   align-items: center;
+  // }
+
+  &-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 75px;
 
     &__links {
       @include dflex;
@@ -31,6 +36,7 @@
 
     &__text {
       @include links;
+      cursor: pointer;
     }
 
     &__btn {
@@ -47,8 +53,5 @@
     }
   }
 
-  &-banner {
-    display: flex;
-    flex-direction: column;
-  }
+
 }

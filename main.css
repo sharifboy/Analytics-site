@@ -31,9 +31,8 @@ button {
   background-image: url(/image/background-img.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 74px;
 }
-.header-banner {
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +43,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 75px;
 }
 .header-nav__links {
   display: flex;
@@ -67,6 +67,7 @@ button {
   font-size: 16px;
   line-height: 19px;
   color: #8794BA;
+  cursor: pointer;
 }
 .header .nav-btn__btn {
   font-size: 16px;
@@ -81,7 +82,48 @@ button {
 .header .nav-btn__btn:hover {
   background-color: #fff;
 }
+
 .header-banner {
   display: flex;
   flex-direction: column;
+}
+.header-banner__title {
+  max-width: 544px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #fff;
+}
+.header-banner__text {
+  max-width: 544px;
+  width: 100%;
+  font-weight: 400;
+  margin-block: 15px 50px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8794BA;
+}
+.header-banner__btn {
+  padding: 15px 80px;
+  background: #ef2a82;
+  border-radius: 68px;
+  width: -moz-max-content;
+  width: max-content;
+  border: 2px solid #ef2a82;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.4s ease;
+}
+.header-banner__btn:hover {
+  background: #fff;
+  color: #ef2a82;
+  border: 2px solid #ef2a82;
+  cursor: pointer;
+}
+.header-banner__img {
+  max-width: 800px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
