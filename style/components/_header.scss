@@ -43,7 +43,12 @@
     }
 
     &__btn:hover {
-        background-color: #fff;
+      background-color: #fff;
     }
+  }
+
+  &-banner {
+    display: flex;
+    flex-direction: column;
   }
 }

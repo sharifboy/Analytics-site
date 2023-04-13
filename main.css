@@ -80,4 +80,8 @@ button {
 }
 .header .nav-btn__btn:hover {
   background-color: #fff;
+}
+.header-banner {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
