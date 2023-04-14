@@ -3,10 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  // .banner {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  .banner {
+    display: flex;
+    align-items: center;
+  }
 
   &-top {
     display: flex;
@@ -18,15 +18,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 75px;
+    padding: 50px 75px;
 
     &__links {
       @include dflex;
       column-gap: 36px;
     }
-
+    
     &__link {
       @include links;
+      cursor: pointer;
     }
   }
   .nav-btn {
