@@ -20,11 +20,19 @@
     justify-content: space-between;
     padding: 50px 75px;
 
+    @include mediaMobileFirst(1040) {
+      padding: 30px 50px;
+    }
+
     &__links {
       @include dflex;
       column-gap: 36px;
+
+      @include mediaMobileFirst(1040) {
+        display: none;
+      }
     }
-    
+
     &__link {
       @include links;
       cursor: pointer;
@@ -38,6 +46,10 @@
     &__text {
       @include links;
       cursor: pointer;
+
+      @include mediaMobileFirst(1040) {
+        display: none;
+      }
     }
 
     &__btn {
@@ -47,12 +59,30 @@
       padding: 10px 53px;
       cursor: pointer;
       transition: $transition;
+
+      @include mediaMobileFirst(1040) {
+        display: none;
+      }
     }
 
     &__btn:hover {
       background-color: #fff;
     }
   }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 
+    & > div {
+      width: 30px;
+      height: 3px;
+      border: 2px solid #fff;
+      display: none;
 
+      @include mediaMobileFirst(1040) {
+        display: flex;
+      }
+    }
+  }
 }
