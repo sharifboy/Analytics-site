@@ -1,0 +1,12 @@
+.section-content {
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &-img {
+        max-width: 600px;
+        width: 100%;
+    }
+  }
+}

@@ -21,3 +21,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin sectionTitle {
+  font-size: 40px;
+  line-height: 47px;
+  color: $titleColor;
+}
