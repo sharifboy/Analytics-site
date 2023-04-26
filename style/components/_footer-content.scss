@@ -1,5 +1,31 @@
+.page-footer {
+  width: 100%;
+  background-color: $titleColor;
+}
+
 .footer-content {
-    max-width: 500px;
-    width: 100%;
-    background-color: #172755;
+  padding: 80px 80px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-title {
+      font-size: 40px;
+      line-height: 47px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    &-text {
+      max-width: 600px;
+      width: 100%;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: $textColor;
+    }
+  }
 }
