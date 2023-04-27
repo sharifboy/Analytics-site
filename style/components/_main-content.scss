@@ -13,6 +13,8 @@
 }
 
   &__text {
+    max-width: 1060px;
+    width: 100%;
     @include text;
     display: flex;
     text-align: center;
