@@ -20,6 +20,25 @@
     padding-bottom: 70px;
     transition: $transition;
     cursor: pointer;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: #fff;
+      transform: scale(1.05);
+    }
+    &:hover &-title {
+      color: $titleColor;
+    }
+
+    &:hover &-btn {
+      background-color: #ef2a82;
+      color: #fff;
+      border: none;
+    }
+
+    &:hover &-number {
+      color: $titleColor;
+    }
 
     &-title {
       padding-block: 50px 10px;
@@ -42,6 +61,8 @@
       width: 100%;
       height: 1px;
       background: #2a407c;
+
+    
     }
 
     &-number {
@@ -64,7 +85,7 @@
     }
 
     &-btn:hover {
-      background: #ef2a82;
+      background: #FFF;
     }
   }
 }

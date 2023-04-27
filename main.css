@@ -291,6 +291,22 @@ button {
   padding-bottom: 70px;
   transition: all 0.4s ease;
   cursor: pointer;
+  border-radius: 30px;
+}
+.footer-block__item:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+.footer-block__item:hover .footer-block__item-title {
+  color: #172755;
+}
+.footer-block__item:hover .footer-block__item-btn {
+  background-color: #ef2a82;
+  color: #fff;
+  border: none;
+}
+.footer-block__item:hover .footer-block__item-number {
+  color: #172755;
 }
 .footer-block__item-title {
   padding-block: 50px 10px;
@@ -330,5 +346,28 @@ button {
   cursor: pointer;
 }
 .footer-block__item-btn:hover {
-  background: #ef2a82;
+  background: #FFF;
+}
+
+.footer-item {
+  padding-block: 63px 45px;
+  border-top: 1px solid #2a407c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-item__link {
+  display: flex;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+}
+.footer-item__link-links {
+  font-size: 14px;
+  line-height: 16px;
+  color: #8794BA;
+}
+.footer-item__image {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }/*# sourceMappingURL=main.css.map */

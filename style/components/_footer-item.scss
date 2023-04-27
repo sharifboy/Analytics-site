@@ -1,0 +1,21 @@
+.footer-item {
+  padding-block: 63px 45px;
+  border-top: 1px solid #2a407c;
+  @include dflex;
+
+  &__link {
+    display: flex;
+    column-gap: 36px;
+
+    &-links {
+      font-size: 14px;
+      line-height: 16px;
+      color: $textColor;
+    }
+  }
+
+  &__image {
+    display: flex;
+    column-gap: 40px;
+  }
+}
